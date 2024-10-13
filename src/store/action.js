@@ -42,5 +42,5 @@ const response = await axios.get('https://dev-0tf0hinghgjl39z.api.raw-labs.com/i
 //         "price": "$0"
 //     }
 // ];
-  dispatch({ type: 'SET_PRODUCTS', payload: response });
+  dispatch({ type: 'SET_PRODUCTS', payload: response?.data });
 };
